@@ -1,0 +1,14 @@
+c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\bin\Debug\TO1_SMK_Restaurant.exe.config
+c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.frmMain.resources
+c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.Properties.Resources.resources
+c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.View.login.resources
+c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.csproj.GenerateResource.Cache
+c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\bin\Debug\TO1_SMK_Restaurant.exe
+c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\bin\Debug\TO1_SMK_Restaurant.pdb
+c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.exe
+c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.pdb
+c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\bin\Debug\EntityFramework.dll
+c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\bin\Debug\EntityFramework.xml
+c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.View.mainMenu.resources
