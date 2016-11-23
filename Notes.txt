@@ -1,0 +1,11 @@
+Privileges
+1 = Employees
+2 = Member
+3 = Role
+4 = Promo
+5 = Ingredients
+6 = Food Menu
+7 = Food Order
+8 = Payment
+9 = Report
+0 = Login
