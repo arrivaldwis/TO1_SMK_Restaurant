@@ -83,15 +83,16 @@ namespace TO1_SMK_Restaurant.View
                 return;
             }
 
-            double minPrice = 1.5 * double.Parse(label15.Text);
-            if (double.Parse(textBox1.Text) < minPrice)
-            {
-                MessageBox.Show("Minimum menu price is 150% * Total price of all ingredients"+Environment.NewLine+"Suggest price: >= " + minPrice);
-                return;
-            }
-
             if (txtName.Text != string.Empty && textBox1.Text != string.Empty && listView2.Items.Count > 0)
             {
+
+                double minPrice = 1.5 * double.Parse(label15.Text);
+                if (double.Parse(textBox1.Text) < minPrice)
+                {
+                    MessageBox.Show("Minimum menu price is 150% * Total price of all ingredients" + Environment.NewLine + "Suggest price: >= " + minPrice);
+                    return;
+                }
+
                 int exists = data.Menus.Where(x => x.menuId.Equals(this.menuId)).Count();
 
                 if (type == 0)
