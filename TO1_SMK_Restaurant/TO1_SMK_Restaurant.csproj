@@ -66,6 +66,24 @@
     </Compile>
     <Compile Include="Class\Helper.cs" />
     <Compile Include="Class\ICallBack.cs" />
+    <Compile Include="Dialog\addEditEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\addEditEmployee.Designer.cs">
+      <DependentUpon>addEditEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\addEditMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\addEditMember.Designer.cs">
+      <DependentUpon>addEditMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\addEditPromo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\addEditPromo.Designer.cs">
+      <DependentUpon>addEditPromo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employee.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -122,6 +140,12 @@
     <Compile Include="Table.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="View\employee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\employee.Designer.cs">
+      <DependentUpon>employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\login.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -134,6 +158,33 @@
     <Compile Include="View\mainMenu.Designer.cs">
       <DependentUpon>mainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\member.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\member.Designer.cs">
+      <DependentUpon>member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\promo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\promo.Designer.cs">
+      <DependentUpon>promo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\role.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\role.Designer.cs">
+      <DependentUpon>role.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dialog\addEditEmployee.resx">
+      <DependentUpon>addEditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\addEditMember.resx">
+      <DependentUpon>addEditMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\addEditPromo.resx">
+      <DependentUpon>addEditPromo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,11 +197,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\employee.resx">
+      <DependentUpon>employee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\mainMenu.resx">
       <DependentUpon>mainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\member.resx">
+      <DependentUpon>member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\promo.resx">
+      <DependentUpon>promo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\role.resx">
+      <DependentUpon>role.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

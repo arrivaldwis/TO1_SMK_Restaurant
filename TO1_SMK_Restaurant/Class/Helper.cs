@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace TO1_SMK_Restaurant.Class
 {
@@ -15,10 +16,15 @@ namespace TO1_SMK_Restaurant.Class
             try
             {
                 string address = new MailAddress(email).Address;
-
-                if (!address.EndsWith(".") && !address.Contains("@.") && !address.Contains(".@") && !address.Contains(".@.") && !address.Contains("_@"))
+                if (address.IndexOfAny(".".ToCharArray()) != -1)
                 {
-                    msg = true;
+                    if (!address.Contains("..") || !address.Contains(".@") || !address.Contains("@.") || !address.Contains("._."))
+                    {
+                        if (!address.EndsWith("."))
+                        {
+                            msg = true;
+                        }
+                    }
                 }
                 else
                 {
@@ -31,6 +37,22 @@ namespace TO1_SMK_Restaurant.Class
             }
 
             return msg;
+        }
+
+        public bool onlyNumberTextField(TextBox tb)
+        {
+            bool msg = true;
+            if (tb.Text.Any(x => char.IsLetter(x)))
+            {
+                msg = false;
+            }
+
+            return msg;
+        }
+
+        public static smk_restaurantEntities GetDB()
+        {
+            return new smk_restaurantEntities();
         }
     }
 }

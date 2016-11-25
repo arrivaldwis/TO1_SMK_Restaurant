@@ -12,7 +12,6 @@ namespace TO1_SMK_Restaurant.View
 {
     public partial class mainMenu : baseView
     {
-        smk_restaurantEntities data = new smk_restaurantEntities();
         private List<Button> buttons = new List<Button>();
         int roleId;
 
@@ -26,7 +25,7 @@ namespace TO1_SMK_Restaurant.View
 
         private void checkPrivileges()
         {
-            var priv = data.Roles.Where(x => x.roleId.Equals(roleId)).First();
+            var priv = data.Roles.Where(x => x.roleId.Equals(roleId)).FirstOrDefault();
 
             string[] privValue = priv.privileges.Substring(1).Split(',');
             string[] devPrivValue = priv.defaultPrivileges.Substring(1).Split(',');
@@ -36,11 +35,40 @@ namespace TO1_SMK_Restaurant.View
             {
                 if (privValue[i].Equals("1"))
                 {
-                    //MessageBox.Show(buttons[i].Text);
                     Button myButton = (Button)this.Controls.Find("button"+i.ToString(), true)[0];
                     myButton.Visible = true;
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            employee views = new employee();
+            parent.view(views, new string[] { this.roleId.ToString() });
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            member views = new member();
+            parent.view(views, new string[] { this.roleId.ToString() });
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            promo views = new promo();
+            parent.view(views, new string[] { this.roleId.ToString() });
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            role views = new role();
+            parent.view(views, new string[] { this.roleId.ToString() });
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            login views = new login();
+            parent.view(views, new string[] { this.roleId.ToString() });
         }
     }
 }

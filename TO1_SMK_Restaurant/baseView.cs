@@ -13,11 +13,19 @@ namespace TO1_SMK_Restaurant
 {
     public partial class baseView : UserControl
     {
+        public smk_restaurantEntities data = new smk_restaurantEntities();
         public ICallBack parent;
+        public Helper helper = new Helper();
+        public string[] par;
 
         public void setParent(ICallBack parent)
         {
             this.parent = parent;
+        }
+
+        public void setData(string[] par)
+        {
+            this.par = par;
         }
 
         public baseView()

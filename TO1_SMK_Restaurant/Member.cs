@@ -23,7 +23,7 @@ namespace TO1_SMK_Restaurant
         public string memberId { get; set; }
         public string firstName { get; set; }
         public string lastName { get; set; }
-        public int phoneNumber { get; set; }
+        public string phoneNumber { get; set; }
         public string email { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -5,28 +5,28 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="11531618c8eb4308ad1e666cc51a9e98" Name="Diagram1" ZoomLevel="54">
-        <EntityTypeShape EntityType="smk_restaurantModel.Bank" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="smk_restaurantModel.Employee" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
-        <EntityTypeShape EntityType="smk_restaurantModel.Ingredient" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="smk_restaurantModel.Member" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="smk_restaurantModel.Menu" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="smk_restaurantModel.MenuIngredient" Width="1.5" PointX="10" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="smk_restaurantModel.Order" Width="1.5" PointX="10.75" PointY="8.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="smk_restaurantModel.OrderDetail" Width="1.5" PointX="13" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="smk_restaurantModel.Payment" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="smk_restaurantModel.Promo" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="smk_restaurantModel.Role" Width="1.5" PointX="0.75" PointY="12.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="smk_restaurantModel.Table" Width="1.5" PointX="8.5" PointY="9" IsExpanded="true" />
-        <AssociationConnector Association="smk_restaurantModel.FK_Payment_Bank" ManuallyRouted="false" />
-        <AssociationConnector Association="smk_restaurantModel.FK_Promo_Bank" ManuallyRouted="false" />
-        <AssociationConnector Association="smk_restaurantModel.FK_Employee_Role" ManuallyRouted="false" />
-        <AssociationConnector Association="smk_restaurantModel.FK_MenuIngredients_Ingredients" ManuallyRouted="false" />
-        <AssociationConnector Association="smk_restaurantModel.FK_Payment_Member" ManuallyRouted="false" />
-        <AssociationConnector Association="smk_restaurantModel.FK_MenuIngredients_Menu" ManuallyRouted="false" />
-        <AssociationConnector Association="smk_restaurantModel.FK_orderDetails_Menu" ManuallyRouted="false" />
-        <AssociationConnector Association="smk_restaurantModel.FK_Order_Table" ManuallyRouted="false" />
-        <AssociationConnector Association="smk_restaurantModel.FK_orderDetails_Order" ManuallyRouted="false" />
-        <AssociationConnector Association="smk_restaurantModel.FK_Payment_Promo" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="smk_restaurantModel.Bank" Width="1.5" PointX="0.75" PointY="3.5" />
+        <EntityTypeShape EntityType="smk_restaurantModel.Employee" Width="1.5" PointX="12" PointY="11" />
+        <EntityTypeShape EntityType="smk_restaurantModel.Ingredient" Width="1.5" PointX="10.75" PointY="7.75" />
+        <EntityTypeShape EntityType="smk_restaurantModel.Member" Width="1.5" PointX="3" PointY="3.375" />
+        <EntityTypeShape EntityType="smk_restaurantModel.Menu" Width="1.5" PointX="7.75" PointY="2.75" />
+        <EntityTypeShape EntityType="smk_restaurantModel.MenuIngredient" Width="1.5" PointX="13" PointY="2.75" />
+        <EntityTypeShape EntityType="smk_restaurantModel.Order" Width="1.5" PointX="7.75" PointY="9.5" />
+        <EntityTypeShape EntityType="smk_restaurantModel.OrderDetail" Width="1.5" PointX="10" PointY="2.5" />
+        <EntityTypeShape EntityType="smk_restaurantModel.Payment" Width="1.5" PointX="5.25" PointY="5" />
+        <EntityTypeShape EntityType="smk_restaurantModel.Promo" Width="1.5" PointX="3" PointY="6.625" />
+        <EntityTypeShape EntityType="smk_restaurantModel.Role" Width="1.5" PointX="9.75" PointY="11.25" />
+        <EntityTypeShape EntityType="smk_restaurantModel.Table" Width="1.5" PointX="5.5" PointY="10" />
+        <AssociationConnector Association="smk_restaurantModel.FK_Payment_Bank" />
+        <AssociationConnector Association="smk_restaurantModel.FK_Promo_Bank" />
+        <AssociationConnector Association="smk_restaurantModel.FK_Employee_Role" />
+        <AssociationConnector Association="smk_restaurantModel.FK_MenuIngredients_Ingredients" />
+        <AssociationConnector Association="smk_restaurantModel.FK_Payment_Member" />
+        <AssociationConnector Association="smk_restaurantModel.FK_MenuIngredients_Menu" />
+        <AssociationConnector Association="smk_restaurantModel.FK_orderDetails_Menu" />
+        <AssociationConnector Association="smk_restaurantModel.FK_Order_Table" />
+        <AssociationConnector Association="smk_restaurantModel.FK_orderDetails_Order" />
+        <AssociationConnector Association="smk_restaurantModel.FK_Payment_Promo" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

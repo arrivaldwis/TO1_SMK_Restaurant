@@ -13,9 +13,6 @@ namespace TO1_SMK_Restaurant.View
 {
     public partial class login : baseView
     {
-        smk_restaurantEntities data = new smk_restaurantEntities();
-        Helper helper = new Helper();
-
         public login()
         {
             InitializeComponent();

@@ -24,6 +24,7 @@ namespace TO1_SMK_Restaurant
             panel4.Controls.Clear();
             view.Dock = DockStyle.Fill;
             view.setParent(this);
+            view.setData(data);
             panel4.Controls.Add(view);
         }
 

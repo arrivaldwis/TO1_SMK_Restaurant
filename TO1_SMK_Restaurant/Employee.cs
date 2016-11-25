@@ -18,7 +18,7 @@ namespace TO1_SMK_Restaurant
         public System.DateTime DOB { get; set; }
         public string employeeName { get; set; }
         public int roleId { get; set; }
-        public int phoneNumber { get; set; }
+        public string phoneNumber { get; set; }
         public string email { get; set; }
         public string password { get; set; }
     
