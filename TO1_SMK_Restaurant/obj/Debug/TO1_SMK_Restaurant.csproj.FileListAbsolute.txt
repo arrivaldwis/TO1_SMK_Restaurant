@@ -34,3 +34,6 @@ c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Re
 \\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.Dialog.addEditPromo.resources
 \\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.View.promo.resources
 \\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.View.role.resources
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.Dialog.addEditIngredients.resources
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.View.ingredients.resources
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.View.foodMenu.resources

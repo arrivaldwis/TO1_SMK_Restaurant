@@ -70,5 +70,17 @@ namespace TO1_SMK_Restaurant.View
             login views = new login();
             parent.view(views, new string[] { this.roleId.ToString() });
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ingredients views = new ingredients();
+            parent.view(views, new string[] { this.roleId.ToString() });
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            foodMenu views = new foodMenu();
+            parent.view(views, new string[] { this.roleId.ToString() });
+        }
     }
 }

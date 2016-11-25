@@ -72,6 +72,12 @@
     <Compile Include="Dialog\addEditEmployee.Designer.cs">
       <DependentUpon>addEditEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dialog\addEditIngredients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\addEditIngredients.Designer.cs">
+      <DependentUpon>addEditIngredients.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dialog\addEditMember.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,18 @@
     <Compile Include="View\employee.Designer.cs">
       <DependentUpon>employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\foodMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\foodMenu.Designer.cs">
+      <DependentUpon>foodMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ingredients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ingredients.Designer.cs">
+      <DependentUpon>ingredients.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\login.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -179,6 +197,9 @@
     <EmbeddedResource Include="Dialog\addEditEmployee.resx">
       <DependentUpon>addEditEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\addEditIngredients.resx">
+      <DependentUpon>addEditIngredients.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dialog\addEditMember.resx">
       <DependentUpon>addEditMember.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +220,12 @@
     </Compile>
     <EmbeddedResource Include="View\employee.resx">
       <DependentUpon>employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\foodMenu.resx">
+      <DependentUpon>foodMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ingredients.resx">
+      <DependentUpon>ingredients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\login.resx">
       <DependentUpon>login.cs</DependentUpon>
