@@ -24,6 +24,7 @@ namespace TO1_SMK_Restaurant.View
             var employee = data.Ingredients.Select(x =>
                 new
                 {
+                    Id= x.ingredientsId,
                     Ingredients = x.ingredientsName,
                     Stock = x.stock,
                     Unit = x.unit,
@@ -77,7 +78,7 @@ namespace TO1_SMK_Restaurant.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Please choose the data first!");
+                MessageBox.Show("Please choose the data first!"+ex.Message);
             }
         }
 
