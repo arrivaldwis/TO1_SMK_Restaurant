@@ -79,6 +79,7 @@
     <EntitySetMapping Name="OrderDetails">
       <EntityTypeMapping TypeName="smk_restaurantModel.OrderDetail">
         <MappingFragment StoreEntitySet="OrderDetails">
+          <ScalarProperty Name="status" ColumnName="status" />
           <ScalarProperty Name="subTotal" ColumnName="subTotal" />
           <ScalarProperty Name="price" ColumnName="price" />
           <ScalarProperty Name="qty" ColumnName="qty" />
@@ -91,12 +92,14 @@
     <EntitySetMapping Name="Payments">
       <EntityTypeMapping TypeName="smk_restaurantModel.Payment">
         <MappingFragment StoreEntitySet="Payment">
+          <ScalarProperty Name="createdAt" ColumnName="createdAt" />
           <ScalarProperty Name="amount" ColumnName="amount" />
           <ScalarProperty Name="promoId" ColumnName="promoId" />
           <ScalarProperty Name="creditCardNumber" ColumnName="creditCardNumber" />
           <ScalarProperty Name="bankId" ColumnName="bankId" />
           <ScalarProperty Name="payMethod" ColumnName="payMethod" />
           <ScalarProperty Name="memberId" ColumnName="memberId" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
           <ScalarProperty Name="paymentId" ColumnName="paymentId" />
         </MappingFragment>
       </EntityTypeMapping>

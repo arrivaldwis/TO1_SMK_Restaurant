@@ -15,15 +15,18 @@ namespace TO1_SMK_Restaurant
     public partial class Payment
     {
         public int paymentId { get; set; }
+        public int orderId { get; set; }
         public string memberId { get; set; }
         public string payMethod { get; set; }
         public Nullable<int> bankId { get; set; }
         public string creditCardNumber { get; set; }
         public Nullable<int> promoId { get; set; }
         public decimal amount { get; set; }
+        public Nullable<System.DateTime> createdAt { get; set; }
     
         public virtual Bank Bank { get; set; }
         public virtual Member Member { get; set; }
+        public virtual Order Order { get; set; }
         public virtual Promo Promo { get; set; }
     }
 }

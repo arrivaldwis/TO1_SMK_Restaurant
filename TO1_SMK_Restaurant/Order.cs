@@ -18,6 +18,7 @@ namespace TO1_SMK_Restaurant
         public Order()
         {
             this.OrderDetails = new HashSet<OrderDetail>();
+            this.Payments = new HashSet<Payment>();
         }
     
         public int orderId { get; set; }
@@ -30,5 +31,7 @@ namespace TO1_SMK_Restaurant
         public virtual Table Table { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Payment> Payments { get; set; }
     }
 }

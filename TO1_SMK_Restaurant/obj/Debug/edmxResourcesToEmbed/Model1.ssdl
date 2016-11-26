@@ -61,7 +61,7 @@
     <Key>
       <PropertyRef Name="orderId" />
     </Key>
-    <Property Name="orderId" Type="int" Nullable="false" />
+    <Property Name="orderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="tableId" Type="int" Nullable="false" />
     <Property Name="status" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="totalPrice" Type="decimal" Precision="10" Scale="2" Nullable="false" />
@@ -78,18 +78,21 @@
     <Property Name="qty" Type="int" Nullable="false" />
     <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="subTotal" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="status" Type="varchar" MaxLength="20" />
   </EntityType>
   <EntityType Name="Payment">
     <Key>
       <PropertyRef Name="paymentId" />
     </Key>
     <Property Name="paymentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="orderId" Type="int" Nullable="false" />
     <Property Name="memberId" Type="varchar" MaxLength="6" />
     <Property Name="payMethod" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="bankId" Type="int" />
     <Property Name="creditCardNumber" Type="varchar" MaxLength="25" />
     <Property Name="promoId" Type="int" />
     <Property Name="amount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="createdAt" Type="date" />
   </EntityType>
   <EntityType Name="Promo">
     <Key>
@@ -216,6 +219,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Payment_Order">
+    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+    <End Role="Payment" Type="Self.Payment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="orderId" />
+      </Principal>
+      <Dependent Role="Payment">
+        <PropertyRef Name="orderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Payment_Promo">
     <End Role="Promo" Type="Self.Promo" Multiplicity="0..1" />
     <End Role="Payment" Type="Self.Payment" Multiplicity="*" />
@@ -283,6 +298,10 @@
     </AssociationSet>
     <AssociationSet Name="FK_Payment_Member" Association="Self.FK_Payment_Member">
       <End Role="Member" EntitySet="Member" />
+      <End Role="Payment" EntitySet="Payment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Payment_Order" Association="Self.FK_Payment_Order">
+      <End Role="Order" EntitySet="Order" />
       <End Role="Payment" EntitySet="Payment" />
     </AssociationSet>
     <AssociationSet Name="FK_Payment_Promo" Association="Self.FK_Payment_Promo">

@@ -27,7 +27,6 @@ c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Re
 \\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.View.mainMenu.resources
 \\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.csproj.GenerateResource.Cache
 \\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.View.employee.resources
-\\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.csprojResolveAssemblyReference.cache
 \\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.Dialog.addEditEmployee.resources
 \\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.Dialog.addEditMember.resources
 \\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.View.member.resources
@@ -37,3 +36,9 @@ c:\users\asc\documents\visual studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Re
 \\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.Dialog.addEditIngredients.resources
 \\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.View.ingredients.resources
 \\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.View.foodMenu.resources
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.View.foodOrder.resources
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.View.payment.resources
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.View.report.resources
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\RdlCompile.cache
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\RdlCompile.compiled
+\\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\obj\Debug\TO1_SMK_Restaurant.csprojResolveAssemblyReference.cache

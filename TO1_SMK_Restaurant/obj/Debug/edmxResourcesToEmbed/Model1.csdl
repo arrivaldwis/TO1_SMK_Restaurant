@@ -49,6 +49,10 @@
       <End Role="Order" EntitySet="Orders" />
       <End Role="OrderDetail" EntitySet="OrderDetails" />
     </AssociationSet>
+    <AssociationSet Name="FK_Payment_Order" Association="smk_restaurantModel.FK_Payment_Order">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="Payment" EntitySet="Payments" />
+    </AssociationSet>
     <AssociationSet Name="FK_Payment_Promo" Association="smk_restaurantModel.FK_Payment_Promo">
       <End Role="Promo" EntitySet="Promoes" />
       <End Role="Payment" EntitySet="Payments" />
@@ -124,7 +128,7 @@
     <Key>
       <PropertyRef Name="orderId" />
     </Key>
-    <Property Name="orderId" Type="Int32" Nullable="false" />
+    <Property Name="orderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="tableId" Type="Int32" Nullable="false" />
     <Property Name="status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="totalPrice" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
@@ -132,6 +136,7 @@
     <Property Name="updatedAt" Type="DateTime" Nullable="false" Precision="3" />
     <NavigationProperty Name="Table" Relationship="smk_restaurantModel.FK_Order_Table" FromRole="Order" ToRole="Table" />
     <NavigationProperty Name="OrderDetails" Relationship="smk_restaurantModel.FK_orderDetails_Order" FromRole="Order" ToRole="OrderDetail" />
+    <NavigationProperty Name="Payments" Relationship="smk_restaurantModel.FK_Payment_Order" FromRole="Order" ToRole="Payment" />
   </EntityType>
   <EntityType Name="OrderDetail">
     <Key>
@@ -143,6 +148,7 @@
     <Property Name="qty" Type="Int32" Nullable="false" />
     <Property Name="price" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
     <Property Name="subTotal" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Menu" Relationship="smk_restaurantModel.FK_orderDetails_Menu" FromRole="OrderDetail" ToRole="Menu" />
     <NavigationProperty Name="Order" Relationship="smk_restaurantModel.FK_orderDetails_Order" FromRole="OrderDetail" ToRole="Order" />
   </EntityType>
@@ -151,14 +157,17 @@
       <PropertyRef Name="paymentId" />
     </Key>
     <Property Name="paymentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="orderId" Type="Int32" Nullable="false" />
     <Property Name="memberId" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
     <Property Name="payMethod" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="bankId" Type="Int32" />
     <Property Name="creditCardNumber" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
     <Property Name="promoId" Type="Int32" />
     <Property Name="amount" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="createdAt" Type="DateTime" Precision="0" />
     <NavigationProperty Name="Bank" Relationship="smk_restaurantModel.FK_Payment_Bank" FromRole="Payment" ToRole="Bank" />
     <NavigationProperty Name="Member" Relationship="smk_restaurantModel.FK_Payment_Member" FromRole="Payment" ToRole="Member" />
+    <NavigationProperty Name="Order" Relationship="smk_restaurantModel.FK_Payment_Order" FromRole="Payment" ToRole="Order" />
     <NavigationProperty Name="Promo" Relationship="smk_restaurantModel.FK_Payment_Promo" FromRole="Payment" ToRole="Promo" />
   </EntityType>
   <EntityType Name="Promo">
@@ -298,6 +307,18 @@
         <PropertyRef Name="orderId" />
       </Principal>
       <Dependent Role="OrderDetail">
+        <PropertyRef Name="orderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Payment_Order">
+    <End Type="smk_restaurantModel.Order" Role="Order" Multiplicity="1" />
+    <End Type="smk_restaurantModel.Payment" Role="Payment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="orderId" />
+      </Principal>
+      <Dependent Role="Payment">
         <PropertyRef Name="orderId" />
       </Dependent>
     </ReferentialConstraint>

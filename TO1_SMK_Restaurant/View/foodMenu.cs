@@ -498,5 +498,21 @@ namespace TO1_SMK_Restaurant.View
             listView2.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
             getTotalIngredientsPrice();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            mainMenu mainView = new mainMenu(int.Parse(par[0]));
+            parent.view(mainView, new string[] { });
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            bool isNumber = helper.onlyNumberTextField(textBox1);
+            if (!isNumber)
+            {
+                textBox1.Text = "";
+                MessageBox.Show("Only number!");
+            }
+        }
     }
 }

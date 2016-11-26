@@ -20,6 +20,7 @@ namespace TO1_SMK_Restaurant
         public int qty { get; set; }
         public decimal price { get; set; }
         public decimal subTotal { get; set; }
+        public string status { get; set; }
     
         public virtual Menu Menu { get; set; }
         public virtual Order Order { get; set; }
