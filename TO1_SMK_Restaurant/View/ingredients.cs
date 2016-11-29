@@ -69,7 +69,7 @@ namespace TO1_SMK_Restaurant.View
                 int rowindex = dataGridView1.CurrentCell.RowIndex;
                 string ingredientsName = dataGridView1.Rows[rowindex].Cells[0].Value.ToString();
 
-                var ingredients = data.Ingredients.Where(x => x.ingredientsName.Equals(ingredientsName)).First();
+                var ingredients = data.Ingredients.Find(int.Parse(ingredientsName));
                 data.Ingredients.Remove(ingredients);
                 data.SaveChanges();
 
