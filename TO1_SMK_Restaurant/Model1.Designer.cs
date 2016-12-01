@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model '\\Mac\Home\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\ASC\Documents\Visual Studio 2013\Projects\TO1_SMK_Restaurant\TO1_SMK_Restaurant\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

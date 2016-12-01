@@ -31,7 +31,7 @@ namespace TO1_SMK_Restaurant.Dialog
 
         private void loadForm(string ingredientsName)
         {
-            var ing = data.Ingredients.Where(x=>x.ingredientsName.Equals(ingredientsName)).First();
+            var ing = data.Ingredients.Find(int.Parse(ingredientsName));
             label1.Text = ing.ingredientsId.ToString();
             textBox1.Text = ing.ingredientsName;
             numericUpDown1.Value = ing.stock;
